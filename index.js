@@ -38,6 +38,11 @@ app.post('/webhook/transcription', async (req, res) => {
       return res.status(200).send('Duplicate');
     }
 
+    if (!eventId) {
+      console.warn('No event ID found in webhook payload');
+      return res.sendStatus(400); // bad request
+    }
+
     await pool.query('INSERT INTO processed_events(id) VALUES ($1)', [eventId]);
 
     if (webhookEvent.type !== 'call:transcription:completed') {
