@@ -5,9 +5,9 @@ const { Pool } = require('pg');
 const app = express();
 app.use(express.json());
 
-const EXTERNAL_API_URL = 'https://your-external-app.com/api/transcriptions'; // 🔁 Replace this
+const EXTERNAL_API_URL = 'https://your-external-app.com/api/transcriptions'; // Replace this
 const EXTERNAL_API_HEADERS = {
-  Authorization: 'Bearer YOUR_EXTERNAL_API_TOKEN', // 🔁 Replace this
+  Authorization: 'Bearer YOUR_EXTERNAL_API_TOKEN', //  Replace this
   'Content-Type': 'application/json',
 };
 
