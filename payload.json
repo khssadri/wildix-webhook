@@ -1,0 +1,33 @@
+{
+  "id": "it3_w119414_1741864367.75",
+  "type": "call:transcription:completed",
+  "data": {
+    "call": {
+      "id": "call_123456",
+      "start": 1741864367000,
+      "end": 1741864967000,
+      "participants": [
+        {
+          "name": "Vadim",
+          "number": "+123456789"
+        }
+      ]
+    },
+    "chunks": [
+      {
+        "id": "d678a74d-b54d-4f7b-b883-0d1b33e50606",
+        "name": "Vadim",
+        "offset": 2296,
+        "text": "Hello, how are you?",
+        "time": "00:00:02"
+      },
+      {
+        "id": "e6f840bc-d0c2-4d21-95e1-c8e4732a7b7d",
+        "name": "Agent",
+        "offset": 5592,
+        "text": "I'm doing well, thank you!",
+        "time": "00:00:05"
+      }
+    ]
+  }
+}
