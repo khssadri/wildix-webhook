@@ -1,11 +1,16 @@
+
 push a file from dir to git
-  git add payload.json
-  git commit -m "Add payload.json"
-  git push origin main
+ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git add payload.json
+ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git commit -m "Add payload.json"
+ <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git push origin main
 
 copy files from git to a dir
-  git clone https://github.com/khssadri/wildix-webhook
+  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;git clone https://github.com/khssadri/wildix-webhook
 
 Database:
-  psql postgresql://webhookdb_sf4t_user:bCqgvvTmP3uDeIl0lpYKZlWXvGT4qIzv@dpg-d0crsdgdl3ps73eggt8g-a.frankfurt-postgres.render.com/webhookdb_sf4t
-  select * from processed_events;
+  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;psql postgresql://webhookdb_sf4t_user:bCqgvvTmP3uDeIl0lpYKZlWXvGT4qIzv@dpg-d0crsdgdl3ps73eggt8g-a.frankfurt-postgres.render.com/webhookdb_sf4t
+  <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;select * from processed_events;
+  
+curl -X POST https://wildix-webhook.onrender.com/webhook/transcription \
+  -H "Content-Type: application/json" \
+  -d @payload.json
